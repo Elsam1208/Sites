@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REstaurante TEST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="inicio">
+    <header>
+        <h1>Restaurante TEST</h1>
+        <nav>
+            <a href="#inicio">Inicío</a>
+            <a href="#about">Sobre</a>
+            <a href="#menu">Menu</a>
+            <a href="#calculator">Calculadora</a>
+            <a href="#reservations">Reserva</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <div class="carousel">
+        <button id="prev">Voltar</button>
+        <div class="carousel-images">
+            <img src="imagens/imagem1.jpg" alt="Imagem 1">
+            <img src="imagens/imagem4.jpg" alt="Imagem 2">
+            <img src="imagens/imagem3.jpg" alt="Imagem 3">
+            <img src="imagens/imagem2.jpg" alt="Imagem 4">
+            <img src="imagens/imagem5.jpg" alt="Imagem 5">
+        </div>
+        <button id="next">Avançar</button>
+    </div>
+
+    <section id="about">
+        <aside><img src="imagens/imagem4.jpg" alt=""></aside>
+
+        <article>
+            <h2>Sobre o Restaurante TEST</h2>
+            <p id="text">O Restaurante TEST é um restaurante que oferece uma experiência gastronômica única. Com um ambiente
+                sofisticado e pratos preparados com ingredientes frescos e de alta qualidade, somos a escolha perfeita
+                para uma refeição inesquecível.
+                O Restaurante TEST é um restaurante que oferece uma experiência gastronômica única. Com um ambiente
+                sofisticad
+                o, cuidadosamente decorado para criar uma atmosfera acolhedora e elegante, nosso espaço é
+                perfeito tanto para jantares românticos quanto para celebrações especiais.
+<br>
+<br>
+                Nossos pratos são preparados com ingredientes frescos e de alta qualidade, selecionados diretamente de
+                produtores locais. A cada estação, atualizamos nosso menu para refletir os sabores e ingredientes mais
+                frescos, garantindo que cada visita seja uma nova descoberta.
+                <br>
+                <br>
+            
+               <p id="visitar">Venha nos visitar e descubra por que somos a escolha perfeita para uma refeição inesquecível!
+                
+               </p>
+
+            </p>
+           <a href="#menu"><button>Menu</button></a> 
+        </article>
+    </section>
+
+    <section id="menu">
+        <h2>Nosso Menu</h2>
+        <p>Sabores únicos, preparados com ingredientes frescos para uma experiência inesquecível.</p>
+        <div class="mudarfundo">
+            <ul>
+                <li>
+                    <img src="icones/prato.png" alt="">
+                    <h3>Prato Principal</h3>
+                    <p>Delicioso prato principal preparado com ingredientes frescos e saborosos.</p>
+                    <p>Preço: R$ 50,00</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="icones/entrada.png" alt="">
+                    <h3>Entrada</h3>
+                    <p>Uma entrada leve e saborosa para começar sua refeição.</p>
+                    <p>Preço: R$ 20,00</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="icones/sobremes.png" alt="">
+                    <h3>Sobremesa</h3>
+                    <p>Doces e sobremesas irresistíveis para finalizar sua refeição com chave de ouro.</p>
+                    <p>Preço: R$ 15,00</p>
+                </li>
+            </ul>
+
+        </div>
+        <a href="cardapio.html"><button>Nosso Cardápio</button></a>
+    </section>
+
+    <section id="calculator">
+        <div class="fundocalcu">
+
+            <h2>Calculadora de Custo</h2>
+            <label for="dish-price">Preço por Prato:</label>
+            <input type="number" id="dish-price" placeholder="Preço do prato" step="0.01">
+
+            <label for="number-dishes">Número de Pratos:</label>
+            <input type="number" id="number-dishes" placeholder="Número de pratos">
+            <button onclick="calculateCost()">Calcular Custo</button>
+            <p id="total-cost"></p>
+
+
+        </div>
+
+
+
+
+    </section>
+
+    <section id="reservations">
+        <h2>Faça sua Reserva</h2>
+        <form id="reservation-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="people">Número de Pessoas:</label>
+            <input type="number" id="people" name="people" required>
+
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Enviar Reserva</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Endereço: Rua Exemplo, 123 - Bairro, Cidade, Estado</p>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>Email: contato@RestauranteTEST.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Restaurante TEST. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>

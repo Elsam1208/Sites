@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.336);
+    padding:30px  4%;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    box-shadow: 5px 5px 15px black;
+    
+}
+
+header h1{
+
+    font-weight: 100;
+    
+
+}
+
+
+
+nav a {
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: goldenrod;
+    border-bottom: 2px solid goldenrod;
+  
+}
+
+/* Estilos do Carrossel */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+}
+
+.carousel-images {
+    display: flex;
+    width: 119rem;
+    overflow: hidden;
+    
+}
+
+.carousel-images img {
+    width: 200rem;
+    height: 55rem;
+    display: none;
+    filter: brightness(50%);
+}
+
+.carousel-images img.active {
+    display: block;
+}
+
+.carousel button {
+    background-color: rgba(0, 0, 0, 0.5); /* Cor com opacidade para ficar visível, mas sem cobrir toda a imagem */
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1; 
+}
+
+#prev {
+    left: 40px;  /* Alinhar à esquerda da imagem */
+}
+
+#next {
+    right: 40px;  /* Alinhar à direita da imagem */
+}
+
+button:hover {
+    background-color: transparent; /* Mudança de cor ao passar o mouse */
+    border: 2px solid goldenrod;
+    color: goldenrod;
+}
+
+
+#about{
+
+    height: 90vh;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    background-color: white;
+    padding: 30px;
+   
+    
+
+}
+
+#about article{
+    width: 50%;
+    height: 60%;
+    text-align: center;
+    padding: 40px;
+    
+}
+
+#about aside{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#about img{
+    width: 70%;
+    height: 80%;
+    
+}
+#about button{
+
+    font-size: 20px;
+    padding: 10px 40px;
+    margin-right: 45em;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid goldenrod;
+    background-color: goldenrod;
+    color: white;
+    transition: all 0.4s;
+
+}
+#about button:hover{
+
+    border: 2px soolid goldenrod;
+    background-color: transparent;
+    color: goldenrod;
+
+}
+
+#about h2{
+
+    font-size: 30px;
+    text-align: start;
+
+}
+
+#about p{
+
+    color:rgb(199, 194, 188);
+    font-size: 19px;
+    font-weight: 100;
+    text-align: justify;
+
+}
+
+#menu{
+
+    background-color: rgb(30,27,27);
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+#visitar{
+    animation: pulsar 1.5s infinite;
+}
+
+
+@keyframes pulsar {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.mudarfundo{
+    display: flex;
+    gap: 10px;
+    align-items:center ;
+    justify-content:center ;
+}
+
+#menu ul {
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 80%;
+    padding: 20px 10px;
+    margin-top: 40px;
+    background-color: rgb(43, 43, 43);
+    border-radius: 10px;
+    transition: all 0.4s;
+    
+}
+#menu ul:hover{
+   cursor: pointer;
+   background-color: goldenrod;
+   
+   
+   
+}
+
+#menu ul li{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#menu li img{
+
+    width: 20%;
+    filter: invert(1) grayscale(1) brightness(1.5);
+
+}
+#menu h2{
+
+    font-size: 40px;
+    margin-top: 30px;
+
+}
+
+#menu p{
+
+    color: white;
+    font-size: 17px;
+    margin-bottom: 20px;
+
+}
+
+#menu h3{
+
+    color: goldenrod;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+#menu button{
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: transparent;
+    color: goldenrod;
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    transition: all 0.4s;
+    font-family: "Lexend", sans-serif;
+    
+}
+
+#menu button:hover{
+   border: 2px solid white;
+   color: white;
+   box-shadow: 0px 0px 20px goldenrod;
+}
+
+
+
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: goldenrod;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form button {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: darkgoldenrod;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#calculator{
+
+    height: 60vh;
+   background: url('imagens/comidafundo.jpg')  no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   display: flex;
+   position: relative;
+}
+.fundocalcu{
+
+    height: 40vh;
+    width: 35%;
+    background-color: rgb(43, 43, 43);
+    border-radius:10px 10px 0 0;
+    position: absolute;
+    bottom: 0px;
+    left: 32%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;  
+}
+
+.fundocalcu h2{
+
+    font-size: 30px ;
+}
+
+.fundocalcu label{
+
+    font-size: 18px;
+    color: white;
+}
+
+.fundocalcu input{
+
+    width: 70%;
+    height: 15%;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 10px ;
+    background-color: transparent;
+    color: white;
+}
+
+.fundocalcu input:focus{
+    border: 2px solid goldenrod;
+    outline: none;
+}
+
+
+.fundocalcu button{
+
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid goldenrod;
+    color: goldenrod;
+    border-radius: 10px;
+    cursor:pointer ;
+    transition: all 0.4s;
+}
+
+.fundocalcu button:hover{
+
+    box-shadow: 0px 0px 20px goldenrod;
+    border: 2px solid white;
+    color: white;
+}
+
+.fundocalcu p{
+    color: white;
+}
+
+#reservations{
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#reservations form{
+    height: 100%;
+    width: 100%;
+}
+
+#reservations h2{
+
+    font-size: 30px;
+
+}
+
+#reservations label {
+
+color: white;
+
+}
+
+#reservations  input{
+
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 20%;
+    color: white;
+
+}
+
+#reservations input:focus{
+    border: 2px solid goldenrod;
+    outline: none;
+}
+
+
+#reservations button{
+
+    margin-top: 30px;
+    border: 2px solid goldenrod;
+    background-color: transparent;
+    color: goldenrod;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: all 0.4s;
+}
+
+
+#reservations button:hover{
+
+    box-shadow: 0px 0px 20px goldenrod;
+    border: 2px solid white;
+    color: white;
+}
